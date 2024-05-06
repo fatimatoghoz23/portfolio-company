@@ -268,7 +268,7 @@ height:5px;
   width: 100%;
 }
   .home-text{
-    font-size: xx-large;
+    font-size: 27px;
     align-items: center;
     justify-content: center;
 
@@ -300,7 +300,7 @@ height:5px;
     display: none;
   }
   .container-words .rotate span{
-    font-size: 38px;
+    font-size: 30px;
   }
 }
 .container-words{
