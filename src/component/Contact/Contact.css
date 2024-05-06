@@ -1,0 +1,189 @@
+.contact{
+  display: flex;
+  justify-content: space-between;
+  background:  linear-gradient(to right,rgb(35, 35, 34) ,rgb(160, 160, 159) );
+  height:max-content;
+  margin-top:4rem;
+  padding: 4rem;
+}
+.contact h1{
+  color: #000;
+  font-size: 2.8rem;
+  font-family: "IBM Plex Sans Arabic", sans-serif; 
+
+}
+
+
+.contant span{
+  color: gold;
+}
+.left-contact{
+  padding: 1rem;
+  flex: 3;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  margin-top: 6rem;
+  color:#fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.left-contact .info{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: right;
+  font-weight: bold;
+}
+
+.left-contact li{
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 20px;
+  color: #000;
+}
+.info img{
+  margin-left: 20px;
+}
+
+.left-contact h1 span{
+  color: gold;
+  font-family: "IBM Plex Sans Arabic", sans-serif; 
+  font-weight: 200;
+}
+.right-contact{
+  padding:0;
+  padding-top: 0.5rem;
+  flex: 4;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  margin-top: 7rem;
+  color:#fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 5s linear;
+}
+.maincircle{
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  box-shadow: 0.3rem 0 0.3rem 0.3rem rgb(140, 137, 137);
+  background-color: black;
+  right: -6rem;
+  z-index: 1000;
+  animation: up-and-down 10s linear infinite;
+}
+ @keyframes up-and-down{
+  0%,
+  100%{
+    transform:translateY(30px)
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+} 
+.maincircle>*{
+  position: absolute;
+}
+.maincircle > :nth-child(1){
+  top: -3rem;
+  right: 6rem;
+}
+.maincircle > :nth-child(2){
+  top: 5rem;
+  right: -3rem;
+}
+.maincircle > :nth-child(3){
+  top: 5rem;
+  right: 14rem;
+}
+.maincircle > :nth-child(4){
+  top:14rem;
+  right: 6rem;
+}
+.maincircle > :nth-child(5){
+  top:5rem;
+  right: 5.8rem;
+  animation: rotate2 4s linear infinite;
+
+}
+@keyframes rotate2{
+  
+  10%{
+    transform: rotate(-20deg);
+  }}
+.second-circle{
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid rgb(182, 180, 180);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  box-shadow: 0.3rem 0 0.3rem 0.3rem rgb(140, 137, 137);
+  z-index: 100;
+
+}
+
+.second-circle > img{
+  transform: scale(0.6);
+  transition: 0.4s linear;
+
+}
+.second-circle img:hover{
+  transform: scale(1.1);
+  transition: 0.6s linear ;
+}
+.back-circle{
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  z-index: -1;
+}
+.yellow{
+  background-color: rgba(255, 217, 0, 0.378);
+  left: -4rem ;
+  top: -3rem;
+  z-index: -1;
+  backdrop-filter: blur(50px);
+
+}
+.black{
+  background-color: rgba(218, 214, 214, 0.337);
+  left: -4rem ;
+  top: 5rem;
+  z-index: -1;
+  backdrop-filter: blur(50px);
+
+}
+@media screen and (max-width:788px) {
+  .contact{
+    flex-direction: column;
+  }
+  .maincircle{
+    right: 0;
+    width: 15rem;
+    height: 15rem;
+  }
+  .second-circle{
+    width: 4rem;
+  height: 4rem;
+  }
+  .yellow{
+    left: -4rem ;
+    top: 1rem;
+  
+  }
+  .black{
+    left: -3rem ;
+    top: 0;
+  }
+  
+}
