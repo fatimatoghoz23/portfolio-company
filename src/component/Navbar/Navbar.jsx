@@ -20,12 +20,12 @@ const Navbar = () => {
         
               <img src='./ican.png' alt='' className='logo'/>
               <div className='header-menu'>
-    <Link to="/" ><li>الرئيسية</li> </Link>
-    <Link to='#about' smooth><li >من نحن</li></Link> 
-     <Link to='#sections'><li >أقسامنا ومنتجاتنا</li></Link>
-     <Link to='#news' ><li > أخر الأخبار</li></Link>
-     <Link to='#contact'><li >تواصل معنا</li></Link>
-     <Link to='#join'><li   className='btn1'>  انضم لنا</li></Link>
+    <li > <Link to="/" >الرئيسية</Link></li> 
+    <li > <Link to='#about' smooth>من نحن</Link> </li>
+     <li > <Link to='#sections' smooth>أقسامنا ومنتجاتنا  </Link></li>
+     <li > <Link to='#news' smooth>أخر الأخبار</Link></li>
+     <li > <Link to='#contact' smooth>تواصل معنا</Link></li>
+     <li className='btn1'><Link to='#join' smooth>  انضم لنا</Link></li>
 
      </div>
       
