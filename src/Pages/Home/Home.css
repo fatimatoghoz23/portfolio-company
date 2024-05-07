@@ -220,7 +220,7 @@ height:5px;
 .home-blur{
   width: 15rem;
   height: 10rem;
-  right: 0;
+  right: -10px;
   top: 0;
 }
 .home-blur2{
