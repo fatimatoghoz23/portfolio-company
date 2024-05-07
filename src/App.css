@@ -119,10 +119,10 @@ select{
   align-items: center;
 }
 .blur{
-  background-color: #fff;
+  background-color: rgb(241, 244, 71);
   position: absolute;
   border-radius: 50%;
-  filter: blur(120px);
+  filter: blur(95px);
   animation: scale 6s infinite
  
 }
@@ -144,7 +144,7 @@ select{
   transform: scale(1);
 }
 80%{
-  transform: scale(0);
+  transform: scale(0.6);
 }
 }
 
@@ -154,15 +154,6 @@ select{
   width: 12rem;
   height: 12rem;
   right: 0;
-  bottom: 0;
-  background-color: rgb(204, 255, 0);
-}
-.blur4{
-  border-radius: 50%;
-  filter: blur(130px);
-  width: 10rem;
-  height: 10rem;
-  left: 0;
   bottom: 0;
   background-color: rgb(204, 255, 0);
 }
